@@ -26,3 +26,23 @@ buttonApp.component('button-counter', {
     </button>`
 })
 buttonApp.mount('#app2')
+
+const App3 = {
+    data(){
+        return {
+            posts: [
+                {id: 1, title: "Give me one star"},
+                {id: 2, title: "Give a cup of Coffee"},
+                {id: 3, title: "Give me your mone... your code"},
+            ],
+        }
+    }
+}
+const app3 = Vue.createApp(App3)
+
+app3.component('blog-post', {
+    props: ['title'],
+    template: `<h4> {{ title }} </h4>`
+})
+
+app3.mount('#app3')

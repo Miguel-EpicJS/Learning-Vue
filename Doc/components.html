@@ -21,6 +21,10 @@
         <button-counter></button-counter>
     </div>
 
+    <div id="app3">
+        <blog-post v-for="post in posts" :key="post.id" :title="post.title"></blog-post>
+    </div>
+
     <script src="components.js"></script>
 </body>
 
