@@ -78,7 +78,7 @@ const app5 = Vue.createApp({})
 
 app5.component('alert-box', {
     template: `
-        <strong>Alert, Error!</strong>
+        <strong>Alert, Error! </strong>
         <slot></slot>
     `
 })
