@@ -14,21 +14,26 @@
             <todo-item v-for="item in todos" v-bind:todo="item" v-bind:key="item.id"></todo-item>
         </ol>
     </div>
-
+    <br>
     <div id="app2">
         <button-counter></button-counter>
         <button-counter></button-counter>
         <button-counter></button-counter>
     </div>
-
+    <br>
     <div id="app3">
         <blog-post v-for="post in posts" :key="post.id" :title="post.title"></blog-post>
     </div>
-
+    <br>
     <div id="app4">
         <div v-bind:style="{ fontSize: postFontSize + 'em' }">
-            <blog-post @reduce-text="postFontSize += $event" @enlarge-text="postFontSize += $event" v-for="post in posts" :key="post.id" :title="post.title"></blog-post>
+            <blog-post @reduce-text="postFontSize += $event" @enlarge-text="postFontSize += $event"
+                v-for="post in posts" :key="post.id" :title="post.title"></blog-post>
         </div>
+    </div>
+    <br>
+    <div id="app5">
+        Something Bad Happens
     </div>
 
     <script src="components.js"></script>

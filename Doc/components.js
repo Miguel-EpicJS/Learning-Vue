@@ -73,3 +73,14 @@ app4.component('blog-post', {
     `
 })
 app4.mount('#app4')
+
+const app5 = Vue.createApp({})
+
+app5.component('alert-box', {
+    template: `
+        <strong>Alert, Error!</strong>
+        <slot></slot>
+    `
+})
+
+app5.mount('#app5')
