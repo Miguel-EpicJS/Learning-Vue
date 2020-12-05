@@ -32,7 +32,7 @@ const App3 = {
         return {
             posts: [
                 {id: 1, title: "Give me one star"},
-                {id: 2, title: "Give a cup of Coffee"},
+                {id: 2, title: "Give me a cup of Coffee"},
                 {id: 3, title: "Give me your mone... your code"},
             ],
         }
@@ -46,3 +46,30 @@ app3.component('blog-post', {
 })
 
 app3.mount('#app3')
+
+const App4 = {
+    data(){
+        return {
+            posts: [
+                {id: 1, title: "Give me one star"},
+                {id: 2, title: "Give me a cup of Coffee"},
+                {id: 3, title: "Give me your mone... your code"},
+            ],
+            postFontSize: 1
+        }
+    }
+}
+
+const app4 = Vue.createApp(App4)
+
+app4.component('blog-post', {
+    props: ['title'],
+    template: `
+        <div class="blog-post">
+            <h4> {{ title }} </h4>
+            <button @click="$emit('enlarge-text', 0.1)">Enlarge Text</button>
+            <button @click="$emit('reduce-text', -0.1)">Reduce text</button>
+        </div>
+    `
+})
+app4.mount('#app4')

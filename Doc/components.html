@@ -25,6 +25,12 @@
         <blog-post v-for="post in posts" :key="post.id" :title="post.title"></blog-post>
     </div>
 
+    <div id="app4">
+        <div v-bind:style="{ fontSize: postFontSize + 'em' }">
+            <blog-post @reduce-text="postFontSize += $event" @enlarge-text="postFontSize += $event" v-for="post in posts" :key="post.id" :title="post.title"></blog-post>
+        </div>
+    </div>
+
     <script src="components.js"></script>
 </body>
 
