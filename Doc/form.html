@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <h2>One line input</h2>
+        <input v-model="message" type="text" placeholder="Edit me">
+        <p>Message is: {{ message }} </p>
+    </div>
+    <br>
+    
+    <br>
+    
+    <div id="app2">
+        <h2>Multiline input</h2>
+        <textarea v-model="message" type="text" placeholder="Edit me"></textarea>
+        <p style="white-space: pre-line;">Message is: {{ message }} </p>
+    </div>
+    
+    <br>
+
+
+    <script src="form.js"></script>
+</body>
+
+</html>
