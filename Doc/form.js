@@ -35,3 +35,13 @@ const app4 = Vue.createApp({
 })
 
 app4.mount('#app4')
+
+const app5 = Vue.createApp({
+    data(){
+        return{
+            picked: ''
+        }
+    }
+})
+
+app5.mount('#app5')
