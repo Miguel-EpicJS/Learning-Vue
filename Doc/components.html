@@ -9,11 +9,16 @@
 </head>
 
 <body>
-
     <div id="app">
         <ol>
             <todo-item v-for="item in todos" v-bind:todo="item" v-bind:key="item.id"></todo-item>
         </ol>
+    </div>
+
+    <div id="app2">
+        <button-counter></button-counter>
+        <button-counter></button-counter>
+        <button-counter></button-counter>
     </div>
 
     <script src="components.js"></script>

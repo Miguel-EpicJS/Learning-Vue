@@ -11,3 +11,18 @@ app.component('todo-item', {
     template: '<li>{{ todo.text }}</li>'
 })
 app.mount('#app')
+
+const buttonApp = Vue.createApp({})
+
+buttonApp.component('button-counter', {
+  data() {
+    return {
+      count: 0
+    }
+  },
+  template: `
+    <button v-on:click="count++">
+      You clicked me {{ count }} times.
+    </button>`
+})
+buttonApp.mount('#app2')
