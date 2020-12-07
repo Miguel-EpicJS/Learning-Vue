@@ -1,13 +1,15 @@
 <template>
   <h1>Client CRUD</h1>
   <create-box @sending-data="dat = $event"></create-box>
+  <read-box :clients="dat"></read-box>
 </template>
 
 <script>
 import createBox from './components/create-box.vue'
+import readBox from './components/read-box.vue'
 
 export default {
-  components: { createBox },
+  components: { createBox, readBox },
   name: 'App',
   data(){
     return{

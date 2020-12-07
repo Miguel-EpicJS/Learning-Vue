@@ -25,7 +25,7 @@ export default {
   methods:{
 
     create(){
-      this.clients.push({name: this.nameBox, date: this.dateBox, desc: this.descBox})
+      this.clients.push({id: Date.now, name: this.nameBox, date: this.dateBox, desc: this.descBox})
       this.$emit('sending-data', this.clients)
     }
   }
