@@ -1,6 +1,6 @@
 <template>
   <h1>Client CRUD</h1>
-  <create-box ></create-box>
+  <create-box @sending-data="dat = $event"></create-box>
 </template>
 
 <script>
@@ -9,7 +9,11 @@ import createBox from './components/create-box.vue'
 export default {
   components: { createBox },
   name: 'App',
-
+  data(){
+    return{
+      dat: [],
+    }
+  },
 }
 </script>
 

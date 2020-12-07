@@ -1,35 +1,32 @@
 <template>
   <form @submit.prevent="create">
     <label for="title-box">Type the name of Client</label>
-    <input v-model="data.nameBox" type="text" id="title-box">
+    <input v-model="nameBox" type="text" id="title-box">
     <label for="date-box">Select delivery date</label>
-    <input v-model="data.dateBox" type="date">
+    <input v-model="dateBox" type="date">
     <label for="desc-box">Description for the Client</label>
-    <textarea v-model="data.descBox" id="desc-box" cols="30" rows="10"></textarea>
+    <textarea v-model="descBox" id="desc-box" cols="30" rows="10"></textarea>
     <button type="submit">Create</button>
   </form>
 </template>
 
 <script>
-import { reactive } from 'vue'
+import { ref } from 'vue'
+
 export default {
-  name: 'create-box',  
-  setup(){
-    const data = reactive({
-      nameBox: '',
-      dateBox: '',
-      descBox: '',
-      clients: [],
-    })
+  name: 'create-box',
+  data(){
+    let nameBox = ref('')
+    let dateBox = ref('')
+    let descBox = ref('')
+    let clients = ref([])
+    return {nameBox, dateBox, descBox, clients}
+  },
+  methods:{
 
-    function create(){
-      data.clients.push({name: data.nameBox, date: data.dateBox, desc: data.descBox})
-      console.log(data.clients)
-    }
-
-    return{
-      data,
-      create,
+    create(){
+      this.clients.push({name: this.nameBox, date: this.dateBox, desc: this.descBox})
+      this.$emit('sending-data', this.clients)
     }
   }
 }
