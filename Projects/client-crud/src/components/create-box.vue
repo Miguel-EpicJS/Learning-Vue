@@ -11,15 +11,13 @@
 </template>
 
 <script>
-import { ref } from 'vue'
-
 export default {
   name: 'create-box',
   data(){
-    let nameBox = ref('')
-    let dateBox = ref('')
-    let descBox = ref('')
-    let clients = ref([])
+    let nameBox = '';
+    let dateBox = '';
+    let descBox = '';
+    let clients = [];
     return {nameBox, dateBox, descBox, clients}
   },
   methods:{
@@ -33,20 +31,6 @@ export default {
 
 </script>
 
-<style scoped>
-*{
-  font-size: 1.3rem;
-}
-form{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-}
-form label{
-  margin: 20px;
-}
-button{
-  margin-top: 20px;
-}
+<style >
+
 </style>

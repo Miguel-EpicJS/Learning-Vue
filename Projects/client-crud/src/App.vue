@@ -28,4 +28,24 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+.btn{
+  padding: 1rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+*{
+  font-size: 1.3rem;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+form label{
+  margin: 20px;
+}
+button{
+  margin-top: 20px;
+}
 </style>
