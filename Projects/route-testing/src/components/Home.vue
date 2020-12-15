@@ -1,7 +1,6 @@
 <template>
   <div class="hello">
     <h1>Hi everyone, this is the main page.</h1>
-    <p>Click here for go to the about page;</p>
   </div>
 </template>
 

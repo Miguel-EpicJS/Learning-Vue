@@ -1,17 +1,16 @@
 <template>
   <div>
-    <Home/>
+    <custom-menu></custom-menu>
   </div>
 </template>
 
 <script>
-import Home from './components/Home.vue'
+import CustomMenu from "./components/CustomMenu.vue"
 
-export default {
+
+export default{
   name: 'App',
-  components: {
-    Home
-  }
+  components: { CustomMenu },
 }
 </script>
 
