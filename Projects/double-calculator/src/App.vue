@@ -1,13 +1,11 @@
 <template>
   <div>
-    <calc-row value="7"></calc-row>
-    <calc-row value="4"></calc-row>
-    <calc-row value="1"></calc-row>
+    <calc-number></calc-number>
   </div>
 </template>
 
 <script>
-import CalcRow from './components/CalcRow.vue'
+import CalcNumber from './components/CalcNumber.vue'
 
 export default {
   name: 'App',
@@ -17,7 +15,7 @@ export default {
     }
   },
   components: {
-    'calc-row': CalcRow
+    'calc-number': CalcNumber
   },
   methos:{
     addNumbers(value){
