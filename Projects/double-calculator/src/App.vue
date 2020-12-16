@@ -1,21 +1,22 @@
 <template>
   <div>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <number-button number='1'></number-button>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NumberButton from './components/NumberButton.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    'number-button': NumberButton
   }
 }
 </script>
 
 <style>
+    NumberButton
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
