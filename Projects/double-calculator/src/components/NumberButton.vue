@@ -19,6 +19,7 @@ export default {
     background: transparent;
     border: 5px solid black;
     transition: all 500ms;
+    cursor: pointer;
 }
 .button-calc:hover{  
     background: #6000af;

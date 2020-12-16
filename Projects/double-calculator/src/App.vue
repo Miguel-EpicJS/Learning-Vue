@@ -1,6 +1,6 @@
 <template>
   <div>
-    <calc-number></calc-number>
+    <calc-number @send-value="numbers += $event"></calc-number>
   </div>
 </template>
 

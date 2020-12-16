@@ -1,8 +1,8 @@
 <template>
   <div>
-    <calc-row value="7"></calc-row>
-    <calc-row value="4"></calc-row>
-    <calc-row value="1"></calc-row>
+    <calc-row @emit-row-value="sendValue($event)" value="7"></calc-row>
+    <calc-row @emit-row-value="sendValue($event)" value="4"></calc-row>
+    <calc-row @emit-row-value="sendValue($event)" value="1"></calc-row>
   </div>
 </template>
 
@@ -12,6 +12,12 @@ import CalcRow from "./CalcRow.vue";
 export default{
   components: { 'calc-row': CalcRow }, 
   name: 'calc-numbers',
+  emits: ['send-value'],
+  methods:{
+    sendValue(value){
+      this.$emit('send-value', value)
+    }
+  }
 }
 </script>
 
