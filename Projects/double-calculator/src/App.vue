@@ -1,6 +1,8 @@
 <template>
   <div>
     <number-button number='1'></number-button>
+    <number-button number='2'></number-button>
+    <number-button number='3'></number-button>
   </div>
 </template>
 

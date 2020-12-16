@@ -11,8 +11,11 @@ export default {
 
 <style scoped>
 .button-calc{
-    width: 128px;
-    height: 128px;
+    width: 100px;
+    height:100px;
     border-radius: 50%;
+    font-size: 2rem;
+    background: transparent;
+    border: 5px solid black;
 }
 </style>
