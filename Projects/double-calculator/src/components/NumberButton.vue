@@ -15,8 +15,13 @@ export default {
     width: 100px;
     height:100px;
     border-radius: 50%;
-    font-size: 2rem;
+    font-size: 3rem;
     background: transparent;
     border: 5px solid black;
+    transition: all 500ms;
+}
+.button-calc:hover{  
+    background: #6000af;
+    color: white;
 }
 </style>
