@@ -1,8 +1,9 @@
 <template>
   <div>
-    <number-button @emit-value='log($event)' number='1'></number-button>
-    <number-button @emit-value='log($event)' number='2'></number-button>
-    <number-button @emit-value='log($event)' number='3'></number-button>
+    <number-button @emit-value='addNumbers($event)' number='1'></number-button>
+    <number-button @emit-value='addNumbers($event)' number='2'></number-button>
+    <number-button @emit-value='addNumbers($event)' number='3'></number-button>
+    {{numbers}}
   </div>
 </template>
 
@@ -11,12 +12,17 @@ import NumberButton from './components/NumberButton.vue'
 
 export default {
   name: 'App',
+  data(){
+    return{
+      numbers: ''
+    }
+  },
   components: {
     'number-button': NumberButton
   },
   methods:{
-    log(value){
-      console.log(value)
+    addNumbers(value){
+      this.numbers += value
     }
   }
 }
