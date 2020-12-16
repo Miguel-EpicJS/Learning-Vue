@@ -1,5 +1,6 @@
 <template>
   <div>
+    <data-visualizer :op="numbers" :res="result"></data-visualizer>
     <calc-number @send-value="numbers += $event"></calc-number>
     <calc-buttons @calc-operation="valid($event)"></calc-buttons>
   </div>
@@ -8,6 +9,7 @@
 <script>
 import CalcButtons from './components/CalcButtons.vue'
 import CalcNumber from './components/CalcNumber.vue'
+import DataVisualizer from './components/Visualizer.vue'
 
 export default {
   name: 'App',
@@ -19,16 +21,21 @@ export default {
   },
   methods:{
     valid(op){
-      if(op != '='){
-        this.numbers += op
-      }else{
+      if(op === '='){
         this.result = eval(this.numbers)
+      }else if(op === 'CE' )
+      {
+        this.numbers = this.numbers.substring(0,this.numbers.length-1);
+      }
+      else{
+        this.numbers += op        
       }
     }
   },
   components: {
     'calc-number': CalcNumber,
-    CalcButtons
+    'calc-buttons': CalcButtons,
+    'data-visualizer': DataVisualizer,
   },
   methos:{
     addNumbers(value){
