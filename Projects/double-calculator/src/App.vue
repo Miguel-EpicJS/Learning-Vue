@@ -1,8 +1,8 @@
 <template>
   <div>
-    <number-button number='1'></number-button>
-    <number-button number='2'></number-button>
-    <number-button number='3'></number-button>
+    <number-button @emit-value='log($event)' number='1'></number-button>
+    <number-button @emit-value='log($event)' number='2'></number-button>
+    <number-button @emit-value='log($event)' number='3'></number-button>
   </div>
 </template>
 
@@ -13,6 +13,11 @@ export default {
   name: 'App',
   components: {
     'number-button': NumberButton
+  },
+  methods:{
+    log(value){
+      console.log(value)
+    }
   }
 }
 </script>

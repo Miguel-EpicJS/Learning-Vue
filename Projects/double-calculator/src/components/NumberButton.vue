@@ -1,11 +1,12 @@
 <template>
-  <button class="button-calc"> {{ number }} </button>
+  <button @click="$emit('emit-value', number)" class="button-calc"> {{ number }} </button>
 </template>
 
 <script>
 export default {
     name: 'button-calc',
-    props: ['number']
+    props: ['number'],
+    emits: ['emit-value'],
 }
 </script>
 
