@@ -1,14 +1,13 @@
 <template>
   <div>
-    <number-button @emit-value='addNumbers($event)' number='1'></number-button>
-    <number-button @emit-value='addNumbers($event)' number='2'></number-button>
-    <number-button @emit-value='addNumbers($event)' number='3'></number-button>
-    {{numbers}}
+    <calc-row value="7"></calc-row>
+    <calc-row value="4"></calc-row>
+    <calc-row value="1"></calc-row>
   </div>
 </template>
 
 <script>
-import NumberButton from './components/NumberButton.vue'
+import CalcRow from './components/CalcRow.vue'
 
 export default {
   name: 'App',
@@ -18,9 +17,9 @@ export default {
     }
   },
   components: {
-    'number-button': NumberButton
+    'calc-row': CalcRow
   },
-  methods:{
+  methos:{
     addNumbers(value){
       this.numbers += value
     }
@@ -29,7 +28,6 @@ export default {
 </script>
 
 <style>
-    NumberButton
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
