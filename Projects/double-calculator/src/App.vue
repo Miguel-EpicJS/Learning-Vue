@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import CalcButtons from './components/CalcButtons.vue'
-import CalcNumber from './components/CalcNumber.vue'
-import DataVisualizer from './components/Visualizer.vue'
+import CalcButtons from './components/Calculator/CalcButtons.vue'
+import CalcNumber from './components/Calculator/CalcNumber.vue'
+import DataVisualizer from './components/Calculator/Visualizer.vue'
 
 export default {
   name: 'App',
