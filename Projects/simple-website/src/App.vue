@@ -28,4 +28,11 @@ html{
   filter: drop-shadow(16px 16px 16px #8C860C);
   margin-top: 60px;
 }
+.container{
+  width: 80%;
+  margin:auto;
+  margin-bottom: 100px;
+  padding-bottom: 100px;
+  border-bottom: 1.2rem dotted;
+}
 </style>
