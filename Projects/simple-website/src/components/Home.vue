@@ -8,6 +8,16 @@
         <p class="title-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Quam maiores dolore excepturi quod molestiae quos?</p>
       </div>
     </div>
+    <div class="container">
+      <div class="work">
+        <div class="left-work">
+          <img class="img-work" src="https://source.unsplash.com/1280x720/?work">
+        </div>
+        <div class="right-work">
+          <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, iure quae quas veritatis maxime perferendis accusantium ipsum dolores voluptatum autem!</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -34,5 +44,21 @@ export default {
     font-size: 4.5rem;
     color: #D9CF1E;
     font-weight: 900;
+  }
+  .work{
+    display: flex;
+    align-items: center;
+  }
+  .work .left-work, .work .right-work{
+    flex-basis: 50%;
+    margin: 0 50px;
+  }
+  .work .left-work img{
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+  }
+  .work .right-work{
+    font-size: 1.5rem;
   }
 </style>
