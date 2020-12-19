@@ -29,4 +29,10 @@ export default {
     margin-left: 50px;
     font-size: 2rem;
   }
+  .title-group .title-desc::first-letter{
+    margin-left: 20px;
+    font-size: 4.5rem;
+    color: #D9CF1E;
+    font-weight: 900;
+  }
 </style>
