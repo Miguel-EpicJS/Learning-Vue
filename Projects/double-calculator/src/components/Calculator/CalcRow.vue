@@ -3,6 +3,7 @@
       <number-button @emit-value="emitValue($event)" v-bind:number="parseInt(value)"></number-button>
       <number-button @emit-value="emitValue($event)" v-bind:number="parseInt(value)+1"></number-button>
       <number-button @emit-value="emitValue($event)" v-bind:number="parseInt(value)+2"></number-button>
+      <number-button v-if="value == 0" @emit-value="emitValue($event)" v-bind:number="parseInt(value)+3"></number-button>
   </div>
 </template>
 

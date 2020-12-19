@@ -2,7 +2,7 @@
   <div>
     <calc-row @emit-row-value="sendValue($event)" value="7"></calc-row>
     <calc-row @emit-row-value="sendValue($event)" value="4"></calc-row>
-    <calc-row @emit-row-value="sendValue($event)" value="1"></calc-row>
+    <calc-row @emit-row-value="sendValue($event)" value="0"></calc-row>
   </div>
 </template>
 
