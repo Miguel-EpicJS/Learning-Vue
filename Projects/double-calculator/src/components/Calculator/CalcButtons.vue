@@ -5,6 +5,7 @@
       <button @click="submitOperation('-')" class="button-calc">-</button>
       <button @click="submitOperation('+')" class="button-calc">+</button><br>
       <button @click="submitOperation('=')" class="button-calc">=</button>
+      <button @click="submitOperation('.')" class="button-calc">.</button>
       <button @click="submitOperation('CE')" class="button-calc">CE</button>
   </div>
 </template>
