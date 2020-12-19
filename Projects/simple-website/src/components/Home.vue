@@ -17,7 +17,16 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
+<style>
+  .title-group{
+    line-height: 1.5;
+    margin-left: 30px;
+  }
+  .title-group .title{
+    font-size: 4.5rem;
+  }
+  .title-group .title-desc{
+    margin-left: 50px;
+    font-size: 2rem;
+  }
 </style>
