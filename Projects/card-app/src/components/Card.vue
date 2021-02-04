@@ -1,7 +1,7 @@
 <template>
   <div class="cards">
     <div class="card" v-for="card in cards" :key="card.desc">
-      <!-- <img> here -->
+      <img :src="card.thumb">
       <h1> {{card.desc}} </h1>
       <p> {{card.desc}} </p>
     </div>
@@ -17,8 +17,54 @@ export default {
         {
           title: "Bla",
           desc: "Blabla",
-          thumb: "url here"
-        }
+          thumb: "https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives.png"
+        },
+        {
+          title: "Bla",
+          desc: "Blabla",
+          thumb: "https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives.png"
+        },
+        {
+          title: "Bla",
+          desc: "Blabla",
+          thumb: "https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives.png"
+        },
+        {
+          title: "Bla",
+          desc: "Blabla",
+          thumb: "https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives.png"
+        },
+        {
+          title: "Bla",
+          desc: "Blabla",
+          thumb: "https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives.png"
+        },
+        {
+          title: "Bla",
+          desc: "Blabla",
+          thumb: "https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives.png"
+        },
+        {
+          title: "Bla",
+          desc: "Blabla",
+          thumb: "https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives.png"
+        },
+        {
+          title: "Bla",
+          desc: "Blabla",
+          thumb: "https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives.png"
+        },
+        {
+          title: "Bla",
+          desc: "Blabla",
+          thumb: "https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives.png"
+        },
+        {
+          title: "Bla",
+          desc: "Blabla",
+          thumb: "https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives.png"
+        },
+        
       ]
     }
   }
@@ -27,4 +73,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto 50px;
+  justify-content: space-around;
+}
+.card{
+  flex-basis: 20%;
+  margin: 100px auto;
+}
+.card img{
+  width: 100px;
+  height: auto;
+}
 </style>
