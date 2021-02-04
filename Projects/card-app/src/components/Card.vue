@@ -81,7 +81,10 @@ export default {
 }
 .card{
   flex-basis: 20%;
-  margin: 100px auto;
+  margin: 100px 10px;
+  padding: 30px;
+  background: white;
+  border-radius: 50px;
 }
 .card img{
   width: 100px;
