@@ -1,7 +1,7 @@
 <template>
-  <div class="main">
-    <card></card>
-  </div>
+    <div>
+        <card></card>
+    </div>
 </template>
 
 <script>
@@ -23,11 +23,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-
-.main{
-  margin: 250px;
-  background: #eee;
-  border-radius: 100px;
 }
 </style>
