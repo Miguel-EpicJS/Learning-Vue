@@ -24,47 +24,6 @@ export default {
           desc: "Blabla",
           thumb: "https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives.png"
         },
-        {
-          title: "Bla",
-          desc: "Blabla",
-          thumb: "https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives.png"
-        },
-        {
-          title: "Bla",
-          desc: "Blabla",
-          thumb: "https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives.png"
-        },
-        {
-          title: "Bla",
-          desc: "Blabla",
-          thumb: "https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives.png"
-        },
-        {
-          title: "Bla",
-          desc: "Blabla",
-          thumb: "https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives.png"
-        },
-        {
-          title: "Bla",
-          desc: "Blabla",
-          thumb: "https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives.png"
-        },
-        {
-          title: "Bla",
-          desc: "Blabla",
-          thumb: "https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives.png"
-        },
-        {
-          title: "Bla",
-          desc: "Blabla",
-          thumb: "https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives.png"
-        },
-        {
-          title: "Bla",
-          desc: "Blabla",
-          thumb: "https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives.png"
-        },
-        
       ]
     }
   }
