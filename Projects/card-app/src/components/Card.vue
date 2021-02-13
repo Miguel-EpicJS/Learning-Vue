@@ -7,7 +7,7 @@
     </div>
     
   </div>
-  <button @click='add()' @keyup.space='add()'>Hi</button>
+  <button @create-card="add()">Hi</button>
 </template>
 
 <script>
