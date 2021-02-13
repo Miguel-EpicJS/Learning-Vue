@@ -5,7 +5,9 @@
       <h1> {{card.desc}} </h1>
       <p> {{card.desc}} </p>
     </div>
+    
   </div>
+  <button @click='add()' @keyup.space='add()'>Hi</button>
 </template>
 
 <script>
@@ -25,6 +27,11 @@ export default {
           thumb: "https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives.png"
         },
       ]
+    }
+  },
+  methods: {
+    add(){
+      alert("hi")
     }
   }
 }
