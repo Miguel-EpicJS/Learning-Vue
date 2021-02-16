@@ -7,7 +7,6 @@
     </div>
     
   </div>
-  <button @create-card="add()">Hi</button>
 </template>
 
 <script>
@@ -15,25 +14,9 @@ export default {
   name: 'Card',
   data(){
     return {
-      cards: [
-        {
-          title: "Bla",
-          desc: "Blabla",
-          thumb: "https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives.png"
-        },
-        {
-          title: "Bla",
-          desc: "Blabla",
-          thumb: "https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives.png"
-        },
-      ]
+      cards: require("../cards.json").cards
     }
   },
-  methods: {
-    add(){
-      alert("hi")
-    }
-  }
 }
 </script>
 

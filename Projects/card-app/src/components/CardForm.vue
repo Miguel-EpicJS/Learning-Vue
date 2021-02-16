@@ -1,17 +1,31 @@
 <template>
     <div>
         <form @submit.prevent="submit" class="form">
-            <input class="field-name" placeholder="Put the name here">
-            <input class="field-desc" placeholder="Put the description here">
-            <input class="field-thumb" placeholder="Put the thumb link here">
-            <button class="button" type="submit">Create</button>
+            <input v-model="title" class="field-name" placeholder="Put the name here">
+            <input v-model="desc" class="field-desc" placeholder="Put the description here">
+            <input v-model="thumb" class="field-thumb" placeholder="Put the thumb link here">
+            <button @click="add()" class="button" type="submit">Create</button>
         </form>
     </div>
 </template>
 
 <script>
 export default {
-    name: "CardForm"
+    name: "CardForm",
+    data(){
+      return{
+        title: "",
+        desc: "",
+        thumb: ""
+      }
+    },
+    methods:{
+      add(){
+        const obj = {title: this.title, desc: this.desc, thumb: this.thumb}
+        const cards = require("../cards.json")
+        cards.cards.push(obj)
+      }
+    }
 }
 </script>
 
