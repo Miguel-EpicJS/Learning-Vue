@@ -4,6 +4,7 @@
       <img :src="card.thumb">
       <h1> {{card.desc}} </h1>
       <p> {{card.desc}} </p>
+      <button @click="del(card)">Delete</button>
     </div>
     
   </div>
@@ -17,6 +18,12 @@ export default {
       cards: require("../cards.json").cards
     }
   },
+  methods:{
+    del(card){
+      const id = this.cards.indexOf(card)
+      this.cards.splice(id, 1)
+    }
+  }
 }
 </script>
 
